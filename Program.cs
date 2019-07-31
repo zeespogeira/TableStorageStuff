@@ -9,7 +9,7 @@ namespace PoC_TableStorageStuff
     {
         static void Main(string[] args)
         {
-            var storageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=teszetstorageaccount;AccountKey=4I0Yq9eiSwAkF1iup30unhyo4Z3b4b6dV9vwerhgep/CdlCF7TlvXXiyBsG+Ku1jSolDAdwFwUMu9fkBfo9jsw==;EndpointSuffix=core.windows.net");
+            var storageAccount = CloudStorageAccount.Parse("table_storage_conn_string");
 
             var client = storageAccount.CreateCloudTableClient();
 
